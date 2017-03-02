@@ -21,7 +21,7 @@ body{
 	bottom: 0;
 	right: 0;
 	left: 0;
-	opacity: 0.4;
+	opacity: 0.5;
 	z-index: -1;
 }
 
@@ -56,6 +56,7 @@ section{
 .sobre h2{
 	padding-top: 66px;
 	margin-bottom: 2%;
+	color: green;
 }
 
 .title h3, .sobre h3{
@@ -87,12 +88,14 @@ section{
 	margin-bottom: 5%;
 	width: 50%;
 	margin: 0 auto;
+	background-color: black;
 }
 
 .sobre{
 	background-image: url("../img/viagem-carro.jpg");
 	background-size: 100%;
 	background-color: #00b3b3;
+	padding-top: 150px;
 }
 
 
