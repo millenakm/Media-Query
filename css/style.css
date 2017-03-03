@@ -28,59 +28,47 @@ body{
 section{
 	width: 100%;
 	margin: 0 auto;
-	height: 100vh;
-}
-
-.title{
-	padding-top: 5%;
-	padding-bottom: 0;
-}
-
-.title, .sobre{
+	height: 90vh;
 	z-index: 2;
 	text-align: center;
 	font-family: 'Satisfy', cursive;
 	color: white;
+	padding-top: 150px;
 }
-.title h1, .sobre h1{
+
+section h1{
 	font-size: 150px;
 	margin-bottom: 0;
 	padding: 0;
 }
-.title h2, .sobre h2{
+section h2{
 	font-size: 100px;
 	padding: 0;
 	margin-top: 0;
 }
 
-.sobre h2{
-	padding-top: 66px;
-	margin-bottom: 2%;
-	color: green;
-}
-
-.title h3, .sobre h3{
+section h3{
 	font-size: 50px;
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 5%;
 }
 
-.title h4, .sobre h4{
+section h4{
 	font-size: 40px;
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 5%;
 }
 
-.title h5, .sobre h5{
+section h5{
 	font-size: 30px;
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 5%;
 }
 
-.title p, .sobre p{
+section p{
 	font-family: 'Indie Flower', cursive;
 	font-size: 22px;
 	padding: 0;
@@ -91,11 +79,21 @@ section{
 	background-color: black;
 }
 
+.title{
+	padding-top: 5%;
+	padding-bottom: 0;
+}
+
+.sobre h2{
+	margin-bottom: 2%;
+	color: white;
+	text-shadow:#000 1px -1px 2px, #000 -1px 1px 2px, #000 1px 1px 2px, #000 -1px -1px 2px
+}
+
 .sobre{
 	background-image: url("../img/viagem-carro.jpg");
-	background-size: 100%;
+	background-size: cover;
 	background-color: #00b3b3;
-	padding-top: 150px;
 }
 
 
