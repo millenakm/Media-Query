@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+	// window.location = "#titulo";
+
+		var scrollPos = $(window).scrollTop();
+		navbar = $('.navbar');
+
+		if (scrollPos > 50) {
+			navbar.addClass('alt-color');
+		} else {
+			navbar.removeClass('alt-color');
+		}
+
 	$(window).scroll(function() {
 		var scrollPos = $(window).scrollTop();
 		navbar = $('.navbar');
@@ -25,7 +36,7 @@ $(document).ready(function(){
 		$target = $(target);
 		$('html, body').stop().animate({
 			'scrollTop': $target.offset().top
-		}, 600, 'swing', function () {
+		}, 1000, 'swing', function () {
 			window.location.hash = target;
 			$(document).on("scroll", onScroll);
 		});
