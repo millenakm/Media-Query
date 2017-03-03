@@ -104,8 +104,7 @@ section p{
 }
 
 .corpo-paises{
-	background-color: rgba(255, 255, 255, 0.9);
-	color: #00b3b3;
+	color: #66ffff;
 	width: 90%;
 	margin-left: 4%;
 	position: absolute;
@@ -287,12 +286,36 @@ nav li a:hover {
 	}
 }
 
-@media (max-width: 780px){
+@media (min-width: 779px) and (max-width: 950px){
+	.box{
+		width: 23%;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 780px){
 	.titulo h1{
 		font-size: 120px;
 	}
 	.titulo h2{
 		font-size: 50px;
+	}
+	.box{
+		width: 31.3%;
+	}
+}
+
+@media (min-width: 440px) and (max-width: 599px){
+	.box{
+		width: 48%;
+	}
+}
+
+@media (max-width: 439px){
+	.box{
+		width: 98%;
+	}
+	.titulo-img{
+		font-size: 30px;
 	}
 }
 /*nav{
