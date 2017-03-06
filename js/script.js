@@ -1,28 +1,19 @@
-$(document).ready(function(){
-
-	// window.location = "#titulo";
-
-		var scrollPos = $(window).scrollTop();
-		navbar = $('.navbar');
-
-		if (scrollPos > 50) {
-			navbar.addClass('alt-color');
-		} else {
-			navbar.removeClass('alt-color');
+function onScroll(event){
+	var scrollPos = $(document).scrollTop();
+	$('nav a').each(function () {
+		var currLink = $(this);
+		var refElement = $(currLink.attr("href"));
+		if (refElement.position().top-66 <= scrollPos && refElement.position().top -66+ refElement.height() >= scrollPos) {
+			$('nav ul li a').removeClass("active");
+			currLink.addClass("active");
 		}
-
-	$(window).scroll(function() {
-		var scrollPos = $(window).scrollTop();
-		navbar = $('.navbar');
-
-		if (scrollPos > 50) {
-			navbar.addClass('alt-color');
-		} else {
-			navbar.removeClass('alt-color');
+		else{
+			currLink.removeClass("active");
 		}
 	});
-	
+}
 
+function scrollTarget(){
 	$(document).on("scroll", onScroll);
 
 	$('a[href^="#"]').on('click', function (e) {
@@ -41,19 +32,55 @@ $(document).ready(function(){
 			$(document).on("scroll", onScroll);
 		});
 	});
-});
+}
 
-function onScroll(event){
-	var scrollPos = $(document).scrollTop();
-	$('nav a').each(function () {
-		var currLink = $(this);
-		var refElement = $(currLink.attr("href"));
-		if (refElement.position().top-66 <= scrollPos && refElement.position().top -66+ refElement.height() >= scrollPos) {
-			$('nav ul li a').removeClass("active");
-			currLink.addClass("active");
-		}
-		else{
-			currLink.removeClass("active");
-		}
+function navbarScroll(){
+	var scrollPos = $(window).scrollTop();
+	navbar = $('.navbar');
+	if (scrollPos > 50) {
+		navbar.addClass('alt-color');
+	} else {
+		navbar.removeClass('alt-color');
+	}
+}
+
+function icon() {
+    var navClass = $("#navbar").attr('class');
+    if (navClass == "navbar" || navClass == "navbar alt-color") {
+        $("#navbar").addClass("responsive");
+    } else {
+        $("#navbar").removeClass("responsive").addClass("navbar");
+    }
+}
+
+function menuLetras(elem){
+	var letra = $(elem).val();
+	$('.'+letra).toggle(800);
+	var classe = $(elem).attr('class');
+	if(classe == 'letras letras-active'){
+		$(elem).removeClass('letras-active');
+	}
+	else{
+		$(elem).addClass('letras-active');
+	}	
+}
+
+function actions(){
+	$(window).scroll(function() {
+		navbarScroll();
+	});
+	scrollTarget();
+	$("#icon").on("click",function(){
+		icon();
+	})
+	$(".letras").on("click", function(){
+		menuLetras(this);
 	});
 }
+
+$(document).ready(function(){
+	$('body').fadeIn(1500);
+	window.location = "#titulo";
+	navbarScroll();
+	actions();
+});
