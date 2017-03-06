@@ -1,3 +1,15 @@
+var json={
+	"paises": [
+	    {
+	      "classe": "a",
+	      "nome": "África do Sul",
+	      "classeimg": 'africa',
+	      "url": "../img/africa.jpg"
+	    }
+    
+    ]
+}
+
 function onScroll(event){
 	var scrollPos = $(document).scrollTop();
 	$('nav a').each(function () {
@@ -76,11 +88,18 @@ function actions(){
 	$(".letras").on("click", function(){
 		menuLetras(this);
 	});
+	$('#btn-modal').click(function(){    
+	    $('#modal-paises').fadeIn('slow');
+	});
+	$('#fecha-modal').click(function(){
+		$('#modal-paises').fadeOut(500);
+	})
 }
 
 $(document).ready(function(){
-	$('body').fadeIn(1500);
 	window.location = "#titulo";
 	navbarScroll();
 	actions();
+
+	$('section').fadeIn(1500);
 });
