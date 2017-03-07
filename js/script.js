@@ -1,7 +1,7 @@
 var dados={
 	"paises": [
-	    { "classe": "a", "nome": "África do Sul", "classeimg": 'africa', "url": "africa.jpg" },
-	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg" },
+	    { "classe": "a", "nome": "África do Sul", "classeimg": 'africa', "url": "africa.jpg", "capital": "Pretória", "idioma": "Africaner e Inglês", "localização": "África Meridional", "bandeira": "bandeira-africa.gif"},
+	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg", "capital": "Berlim", "idioma": "Alemão", "localização": "Oeste da Europa", "bandeira": "bandeira-alemanha.gif"},
 	    { "classe": "a", "nome": "Argentina", "classeimg": 'argentina', "url": "argentina.jpg" },
 	    { "classe": "a", "nome": 'Austrália', "classeimg": 'australia', "url": "australia.jpg" },
 	    { "classe": "b", "nome": 'Barbados', "classeimg": 'barbados', "url": "barbados.jpg" },
@@ -58,8 +58,17 @@ function criaMenuLetras(){
 
 function imagens(){	
 	for(var i=0; i<paises.length; i++){
-		$("#corpoPaises").append('<div class="box '+paises[i].classe+'"><a class="btn-modal" data-modal="modalPaises"><div class="titulo-img">'+paises[i].nome+'</div><div class="fotos-paises '+paises[i].classeimg+'"></div></a></div>');
+		$("#corpoPaises").append('<div class="box '+paises[i].classe+'"><a class="btn-modal" data-modal="modalPaises" data-pais="'+paises[i].classeimg+'"><div class="titulo-img">'+paises[i].nome+'</div><div class="fotos-paises '+paises[i].classeimg+'"></div></a></div>');
 		$("."+paises[i].classeimg).css({'background-image':'url(img/'+paises[i].url+')'});
+	}
+}
+
+function modal(nome){
+	for(var i=0; i<paises.length; i++){
+		if(paises[i].classeimg == nome){
+			$("#info").html('<h3>País: '+paises[i].nome+'</h3><h3>Capital: '+paises[i].capital+'</h3><h3>Idioma: '+paises[i].idioma+'</h3><h3>Localização: '+paises[i].localização+'</h3>');
+			$(".modal").css({'background-image':'url("img/'+paises[i].url+'")','background-size':'cover'})
+		}	
 	}
 }
 
@@ -144,10 +153,13 @@ function actions(){
 	$('a').on('click', function(){    
 		if($(this).data("modal")=="modalPaises"){
 	    	$('#modal-paises').fadeIn('slow');
+	    	$("body").css({'overflow-y':'hidden'});
+	    	modal($(this).data("pais"));
 	    }
 	});
 	$('#fecha-modal').click(function(){
 		$('#modal-paises').fadeOut(500);
+		$("body").css({'overflow-y':'auto'});
 	})
 }
 
