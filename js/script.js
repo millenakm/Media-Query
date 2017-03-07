@@ -1,4 +1,4 @@
-var json={
+var dados={
 	"paises": [
 	    { "classe": "a", "nome": "África do Sul", "classeimg": 'africa', "url": "africa.jpg" },
 	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg" },
@@ -47,8 +47,8 @@ var json={
     ]
 }
 
-var paises = json.paises;
-var letras = json.letras;
+var paises = dados.paises;
+var letras = dados.letras;
 
 function criaMenuLetras(){
 	for(var i=0; i<letras.length; i++){
@@ -58,7 +58,7 @@ function criaMenuLetras(){
 
 function imagens(){	
 	for(var i=0; i<paises.length; i++){
-		$("#corpoPaises").append('<div class="box '+paises[i].classe+'"><a id="btn-modal"><div class="titulo-img">'+paises[i].nome+'</div><div class="fotos-paises '+paises[i].classeimg+'"></div></a></div>');
+		$("#corpoPaises").append('<div class="box '+paises[i].classe+'"><a class="btn-modal" data-modal="modalPaises"><div class="titulo-img">'+paises[i].nome+'</div><div class="fotos-paises '+paises[i].classeimg+'"></div></a></div>');
 		$("."+paises[i].classeimg).css({'background-image':'url(img/'+paises[i].url+')'});
 	}
 }
@@ -132,7 +132,7 @@ function menuLetras(elem){
 
 function actions(){
 	$(window).scroll(function() {
-		navbarScroll();
+		corNavbar();
 	});
 	scrollTarget();
 	$("#icon").on("click",function(){
@@ -141,8 +141,10 @@ function actions(){
 	$(".letras").on("click", function(){
 		menuLetras(this);
 	});
-	$('#btn-modal').on('click', function(){    
-	    $('#modal-paises').fadeIn('slow');
+	$('a').on('click', function(){    
+		if($(this).data("modal")=="modalPaises"){
+	    	$('#modal-paises').fadeIn('slow');
+	    }
 	});
 	$('#fecha-modal').click(function(){
 		$('#modal-paises').fadeOut(500);
@@ -152,7 +154,7 @@ function actions(){
 $(document).ready(function(){
 	criaMenuLetras();
 	imagens();
-	window.location = "#titulo";
+	// window.location = "#titulo";
 	corNavbar();
 	actions();
 	$('section').fadeIn(1500);

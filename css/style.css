@@ -18,6 +18,7 @@ section{
 }
 
 .modal{
+	font-family: 'Poiret One', cursive;
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -168,7 +169,7 @@ section p{
 }
 
 .titulo-img{
-	font-size: 110%;
+	font-size: 120%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -193,7 +194,7 @@ section p{
 	padding-top: 100%;
 }
 
-#btn-modal, #fecha-modal{
+.btn-modal, #fecha-modal{
 	cursor: pointer;
 }
 
@@ -205,33 +206,33 @@ nav{
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    transition: background 0.3s ease-in;
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	background-color: transparent;
+	position: fixed;
+	top: 0;
+	transition: background 0.3s ease-in;
 	width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    z-index: 1022;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	z-index: 1022;
 }
 
 nav li {
-    float: left;
+	float: left;
 }
 
 nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 8px 5px 8px;
-    margin: 0px 6px 0px 6px;
-    text-decoration: none;
-    border-bottom: 1px solid white;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px 8px 5px 8px;
+	margin: 0px 6px 0px 6px;
+	text-decoration: none;
+	border-bottom: 1px solid white;
 
 }
 
@@ -284,15 +285,15 @@ nav li a {
 }
 
 nav li a:hover{
-    border-bottom: 3px solid white;
-    font-size: 21px;
+	border-bottom: 3px solid white;
+	font-size: 21px;
 }
 
 .alt-color{
 	background-color: #000;
 	transition: background 0.3s ease-in;
-    box-shadow: 0 2px 8px 0 grey, 0 2px 2px 0 black;
- }
+	box-shadow: 0 2px 8px 0 grey, 0 2px 2px 0 black;
+}
 
 .active{
 	background-color: rgba(0, 0, 0, 0.1);
@@ -325,6 +326,9 @@ nav li a:hover{
 	.box{
 		width: 23%;
 	}
+	.titulo-img{
+		font-size: 18px;
+	}
 }
 
 @media (min-width: 600px) and (max-width: 780px){
@@ -337,11 +341,17 @@ nav li a:hover{
 	.box{
 		width: 31.3%;
 	}
+	.titulo-img{
+		font-size: 18px;
+	}
 }
 
 @media (min-width: 440px) and (max-width: 599px){
 	.box{
 		width: 48%;
+	}
+	.titulo-img{
+		font-size: 22px;
 	}
 	.titulo h1{
 		font-size: 80px;
@@ -363,7 +373,7 @@ nav li a:hover{
 		width: 98%;
 	}
 	.titulo-img{
-		font-size: 30px;
+		font-size: 26px;
 	}
 	.titulo h1{
 		font-size: 120px;
@@ -378,32 +388,46 @@ nav li a:hover{
 		background-color: black;
 		height: 30px;
 	}
-	ul li, .link-right {display: none;}
-  	ul li.icon {
-    display: inline-block;
-    position: fixed;
-    right: 0;
-    top: 0;
-   }
-    ul.responsive {position: fixed; top: 0; background-color: black; height: auto;}
-  ul.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.responsive li a {
-    display: block;
-    text-align: left;
-    border: none;
-  }
-  ul.responsive li a, ul.responsive .link-right {
-    display: block;
-    text-align: left;
-    border: none;
-  }
+	ul li, .link-right{
+		display: none;
+	}
+	ul li.icon{
+		display: inline-block;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+	ul.responsive {
+		position: fixed; top: 0; background-color: black; height: auto;
+	}
+	ul.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.responsive li a {
+		display: block;
+		text-align: left;
+		border: none;
+	}
+	ul.responsive li a, ul.responsive .link-right {
+		display: block;
+		text-align: left;
+		border: none;
+	}
+	.modal-body{
+		width: 80%;
+		left: 10%;
+	}
+}
 
+
+@media (max-height: 445px){
+	section{
+		height: auto;
+	}
 }
