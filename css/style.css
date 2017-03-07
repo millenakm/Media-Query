@@ -179,50 +179,6 @@ section p{
 
 .box{
 	display: none;
-}
-
-.box .africa{background-image: url("../img/africa.jpg");}
-.box .alemanha{background-image: url("../img/alemanha.jpg");}
-.box .argentina{background-image: url("../img/argentina.jpg");}
-.box .australia{background-image: url("../img/australia.jpg");}
-.box .barbados{background-image: url("../img/barbados.jpg");}
-.box .belgica{background-image: url("../img/belgica.jpg");}
-.box .bermudas{background-image: url("../img/bermudas.jpg");}
-.box .bielorrussia{background-image: url("../img/bielorrussia.jpg");}
-.box .bolivia{background-image: url("../img/bolivia.jpg");}
-.box .bosnia{background-image: url("../img/bosnia.jpg");}
-.box .brasil{background-image: url("../img/brasil.jpg");}
-.box .bulgaria{background-image: url("../img/bulgaria.jpg");}
-.box .caboverde{background-image: url("../img/caboverde.jpg");}
-.box .canada{background-image: url("../img/canada.jpg");}
-.box .chile{background-image: url("../img/chile.jpg");}
-.box .china{background-image: url("../img/china.jpg");}
-.box .dinamarca{background-image: url("../img/dinamarca.jpg");}
-.box .egito{background-image: url("../img/egito.jpg");}
-.box .espanha{background-image: url("../img/espanha.jpg");}
-.box .eua{background-image: url("../img/eua.jpg");}
-.box .filipinas{background-image: url("../img/filipinas.jpg");}
-.box .frança{background-image: url("../img/frança.jpg");}
-.box .grecia{background-image: url("../img/grecia.jpg");}
-.box .india{background-image: url("../img/india.png");}
-.box .irlanda{background-image: url("../img/irlanda.jpg");}
-.box .italia{background-image: url("../img/italia.jpg");}
-.box .japao{background-image: url("../img/japao.jpg");}
-.box .luxemburgo{background-image: url("../img/luxemburgo.jpg");}
-.box .maldivas{background-image: url("../img/maldivas.jpg");}
-.box .marrocos{background-image: url("../img/marrocos.jpg");}
-.box .mexico{background-image: url("../img/mexico.jpg");}
-.box .noruega{background-image: url("../img/noruega.jpg");}
-.box .peru{background-image: url("../img/peru.png");}
-.box .polonia{background-image: url("../img/polonia.jpg");}
-.box .portugal{background-image: url("../img/portugal.jpg");}
-.box .reinounido{background-image: url("../img/reinounido.png");}
-.box .russia{background-image: url("../img/russia.jpg");}
-.box .servia{background-image: url("../img/servia.jpg");}
-.box .suiça{background-image: url("../img/suiça.jpg");}
-.box .turquia{background-image: url("../img/turquia.jpg");}
-
-.box{
 	position: relative;
 	width: 18%;	
 	float: left;
