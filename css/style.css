@@ -267,6 +267,7 @@ nav li a {
 	font-size: 30px;
 	font-family: 'Indie Flower', cursive;
 	outline: none;
+	margin: 2px;
 }
 
 .letras:hover{
