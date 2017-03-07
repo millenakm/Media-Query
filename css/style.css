@@ -265,6 +265,7 @@ nav li a {
 .icon{
 	display: none;
 	z-index: 1022;
+	cursor: pointer;
 }
 .icon a, .icon a:hover{
 	border: none;

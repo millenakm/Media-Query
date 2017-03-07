@@ -99,7 +99,7 @@ function scrollTarget(){
 	});
 }
 
-function navbarScroll(){
+function corNavbar(){
 	var scrollPos = $(window).scrollTop();
 	navbar = $('.navbar');
 	if (scrollPos > 50) {
@@ -109,7 +109,7 @@ function navbarScroll(){
 	}
 }
 
-function icon() {
+function icone() {
     var navClass = $("#navbar").attr('class');
     if (navClass == "navbar" || navClass == "navbar alt-color") {
         $("#navbar").addClass("responsive");
@@ -136,7 +136,7 @@ function actions(){
 	});
 	scrollTarget();
 	$("#icon").on("click",function(){
-		icon();
+		icone();
 	})
 	$(".letras").on("click", function(){
 		menuLetras(this);
@@ -153,7 +153,7 @@ $(document).ready(function(){
 	criaMenuLetras();
 	imagens();
 	window.location = "#titulo";
-	navbarScroll();
+	corNavbar();
 	actions();
 	$('section').fadeIn(1500);
 });
