@@ -166,7 +166,6 @@ function actions(){
 $(document).ready(function(){
 	criaMenuLetras();
 	imagens();
-	// window.location = "#titulo";
 	corNavbar();
 	actions();
 	$('section').fadeIn(1500);
