@@ -1,45 +1,88 @@
 var dados={
 	"paises": [
-	    { "classe": "a", "nome": "África do Sul", "classeimg": 'africa', "url": "africa.jpg", "capital": "Pretória", "idioma": "Africaner e Inglês", "localização": "África Meridional", "bandeira": "bandeira-africa.gif"},
-	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg", "capital": "Berlim", "idioma": "Alemão", "localização": "Oeste da Europa", "bandeira": "bandeira-alemanha.gif"},
-	    { "classe": "a", "nome": "Argentina", "classeimg": 'argentina', "url": "argentina.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "a", "nome": 'Austrália', "classeimg": 'australia', "url": "australia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Barbados', "classeimg": 'barbados', "url": "barbados.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Bélgica', "classeimg": 'belgica', "url": "belgica.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Bermudas', "classeimg": 'bermudas', "url": "bermudas.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Bielorrússia', "classeimg": 'bielorrussia', "url": "bielorrussia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Bolívia', "classeimg": 'bolivia', "url": "bolivia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Bósnia e Hezergovina', "classeimg": 'bosnia', "url": "bosnia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "b", "nome": 'Brasil', "classeimg": 'brasil', "url": "brasil.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""}, 
-	    { "classe": "b", "nome": 'Bulgária', "classeimg": 'bulgaria', "url": "bulgaria.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "c", "nome": 'Cabo Verde', "classeimg": 'caboverde', "url": "caboverde.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""}, 
-	    { "classe": "c", "nome": 'Canadá', "classeimg": 'canada', "url": "canada.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "c", "nome": 'Chile', "classeimg": 'chile', "url": "chile.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "c", "nome": 'China', "classeimg": 'china', "url": "china.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},    
-	    { "classe": "d", "nome": 'Dinamarca', "classeimg": 'dinamarca', "url": "dinamarca.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},    
-	    { "classe": "e", "nome": 'Egito', "classeimg": 'egito', "url": "egito.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "e", "nome": 'Espanha', "classeimg": 'espanha', "url": "espanha.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "e", "nome": 'Estados Unidos', "classeimg": 'eua', "url": "eua.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},   
-	    { "classe": "f", "nome": 'Filipinas', "classeimg": 'filipinas', "url": "filipinas.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},   
-	    { "classe": "f", "nome": 'França', "classeimg": 'frança', "url": "frança.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},   
-	    { "classe": "g", "nome": 'Grécia', "classeimg": 'grecia', "url": "grecia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "i", "nome": 'Índia', "classeimg": 'india', "url": "india.png", "capital": "", "idioma": "", "localização": "", "bandeira": ""},   
-	    { "classe": "i", "nome": 'Irlanda', "classeimg": 'irlanda', "url": "irlanda.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "i", "nome": 'Itália', "classeimg": 'italia', "url": "italia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "j", "nome": 'Japão', "classeimg": 'japao', "url": "japao.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},   
-	    { "classe": "l", "nome": 'Luxemburgo', "classeimg": 'luxemburgo', "url": "luxemburgo.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "m", "nome": 'Maldivas', "classeimg": 'maldivas', "url": "maldivas.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "m", "nome": 'Marrocos', "classeimg": 'marrocos', "url": "marrocos.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "m", "nome": 'México', "classeimg": 'mexico', "url": "mexico.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},
-	    { "classe": "n", "nome": 'Noruega', "classeimg": 'noruega', "url": "noruega.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "p", "nome": 'Peru', "classeimg": 'peru', "url": "peru.png", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "p", "nome": 'Polônia', "classeimg": 'polonia', "url": "polonia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "p", "nome": 'Portugal', "classeimg": 'portugal', "url": "portugal.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "r", "nome": 'Reino Unido', "classeimg": 'reinounido', "url": "reinounido.png", "capital": "", "idioma": "", "localização": "", "bandeira": ""}, 
-	    { "classe": "r", "nome": 'Rússia', "classeimg": 'russia', "url": "russia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "s", "nome": 'Sérvia', "classeimg": 'servia', "url": "servia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "s", "nome": 'Suíça', "classeimg": 'suiça', "url": "suiça.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""},  
-	    { "classe": "t", "nome": 'Turquia', "classeimg": 'turquia', "url": "turquia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": ""} 
+	    { "classe": "a", "nome": "África do Sul", "classeimg": 'africa', "url": "africa.jpg", "capital": "Cidade do Cabo", "idioma": "Africaner e Inglês", "localização": "África Meridional", "bandeira": "bandeira-africa.gif", "turismo":[
+	    		{"local": "Parque Nacioal Kruger", "localização": "Limpopo e Mpumalanga"},
+	    		{"local": "Orla de Victoria e Alfred", "localização":"Cidade do Cabo"}
+	    	
+	    ]},
+	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg", "capital": "Berlim", "idioma": "Alemão", "localização": "Oeste da Europa", "bandeira": "bandeira-alemanha.gif", "turismo":[	    	
+	    ]},
+	    { "classe": "a", "nome": "Argentina", "classeimg": 'argentina', "url": "argentina.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "a", "nome": 'Austrália', "classeimg": 'australia', "url": "australia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Barbados', "classeimg": 'barbados', "url": "barbados.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Bélgica', "classeimg": 'belgica', "url": "belgica.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Bermudas', "classeimg": 'bermudas', "url": "bermudas.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Bielorrússia', "classeimg": 'bielorrussia', "url": "bielorrussia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Bolívia', "classeimg": 'bolivia', "url": "bolivia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Bósnia e Hezergovina', "classeimg": 'bosnia', "url": "bosnia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "b", "nome": 'Brasil', "classeimg": 'brasil', "url": "brasil.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]}, 
+	    { "classe": "b", "nome": 'Bulgária', "classeimg": 'bulgaria', "url": "bulgaria.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "c", "nome": 'Cabo Verde', "classeimg": 'caboverde', "url": "caboverde.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]}, 
+	    { "classe": "c", "nome": 'Canadá', "classeimg": 'canada', "url": "canada.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "c", "nome": 'Chile', "classeimg": 'chile', "url": "chile.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "c", "nome": 'China', "classeimg": 'china', "url": "china.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},    
+	    { "classe": "d", "nome": 'Dinamarca', "classeimg": 'dinamarca', "url": "dinamarca.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},    
+	    { "classe": "e", "nome": 'Egito', "classeimg": 'egito', "url": "egito.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "e", "nome": 'Espanha', "classeimg": 'espanha', "url": "espanha.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "e", "nome": 'Estados Unidos', "classeimg": 'eua', "url": "eua.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},   
+	    { "classe": "f", "nome": 'Filipinas', "classeimg": 'filipinas', "url": "filipinas.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},   
+	    { "classe": "f", "nome": 'França', "classeimg": 'frança', "url": "frança.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},   
+	    { "classe": "g", "nome": 'Grécia', "classeimg": 'grecia', "url": "grecia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "i", "nome": 'Índia', "classeimg": 'india', "url": "india.png", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},   
+	    { "classe": "i", "nome": 'Irlanda', "classeimg": 'irlanda', "url": "irlanda.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "i", "nome": 'Itália', "classeimg": 'italia', "url": "italia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "j", "nome": 'Japão', "classeimg": 'japao', "url": "japao.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},   
+	    { "classe": "l", "nome": 'Luxemburgo', "classeimg": 'luxemburgo', "url": "luxemburgo.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "m", "nome": 'Maldivas', "classeimg": 'maldivas', "url": "maldivas.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "m", "nome": 'Marrocos', "classeimg": 'marrocos', "url": "marrocos.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "m", "nome": 'México', "classeimg": 'mexico', "url": "mexico.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},
+	    { "classe": "n", "nome": 'Noruega', "classeimg": 'noruega', "url": "noruega.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "p", "nome": 'Peru', "classeimg": 'peru', "url": "peru.png", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "p", "nome": 'Polônia', "classeimg": 'polonia', "url": "polonia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "p", "nome": 'Portugal', "classeimg": 'portugal', "url": "portugal.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "r", "nome": 'Reino Unido', "classeimg": 'reinounido', "url": "reinounido.png", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]}, 
+	    { "classe": "r", "nome": 'Rússia', "classeimg": 'russia', "url": "russia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "s", "nome": 'Sérvia', "classeimg": 'servia', "url": "servia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "s", "nome": 'Suíça', "classeimg": 'suiça', "url": "suiça.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]},  
+	    { "classe": "t", "nome": 'Turquia', "classeimg": 'turquia', "url": "turquia.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "", "turismo":[	    	
+	    ]} 
     ],
     "letras":
     [
@@ -66,11 +109,18 @@ function imagens(){
 function modal(nome){
 	for(var i=0; i<paises.length; i++){
 		if(paises[i].classeimg == nome){
-			$("#info").html('<h3>País: '+paises[i].nome+'</h3><h3>Capital: '+paises[i].capital+'</h3><h3>Idioma: '+paises[i].idioma+'</h3><h3>Localização: '+paises[i].localização+'</h3>');
-			$(".modal").css({'background-image':'url("img/'+paises[i].url+'")','background-size':'cover'})
+			$(".dados").html('<h3><mark>País:</mark> '+paises[i].nome+'</h3><h3><mark>Capital:</mark> '+paises[i].capital+'</h3><h3><mark>Idioma:</mark> '+paises[i].idioma+'</h3><h3><mark>Localização:</mark> '+paises[i].localização+'</h3>');
+			$(".img").html('<img src="img/'+paises[i].bandeira+'">');
+			$(".tituloModal").children("h1").html(paises[i].nome);
+			$(".modal").css({'background-image':'url("img/'+paises[i].url+'")','background-size':'cover'});
+			$(".tur").html("");
+			for (var z=0; z<paises[i].turismo.length; z++){
+				$(".tur").append('<h3><mark>Local:</mark> '+paises[i].turismo[z].local+'</h3><h3><mark>Localização:</mark> '+paises[i].turismo[z].localização+'</h3>');
+			}
 		}	
 	}
 }
+
 
 function onScroll(event){
 	var scrollPos = $(document).scrollTop();
@@ -161,6 +211,12 @@ function actions(){
 		$('#modal-paises').fadeOut(500);
 		$("body").css({'overflow-y':'auto'});
 	})
+	$("#btn-info").click(function(){
+		$(".dados, #titulo-dados").toggle('slow');
+	});
+	$("#btn-turismo").click(function(){
+		$(".tur, #titulo-turismo").toggle('slow');
+	});
 }
 
 $(document).ready(function(){

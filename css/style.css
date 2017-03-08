@@ -52,11 +52,102 @@ section{
 	right: 0;
 	bottom: 0;
 	left: 0;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+mark{
+	background-color: transparent;
+	border-bottom: solid 2px #00b3b3;
+	color: white;
+}
+
+.tituloModal{
+	margin-top: 1%;
+	margin-left: 2%;
+	width: 70%;
+	float: left;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	position: relative;
+	height: inherit;
+}
+
+.tituloModal h1{
+	font-family: 'Playfair Display SC', serif;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 2%;
+}
+
+#header{
+	display: flex;
+}
+
+#info{
+	margin-left: 1%;
+    padding: 1%;
+    width: 70%;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+#info h3{
+	display: inline-block;
+	width: 48%;
+	padding: 1%;
+}
+
+#info h2{
+	text-align: center;
+	font-family: 'Playfair Display SC', serif;
+}
+
+#header .img{
+	width: 20%;
+	float: left;
+	opacity: 0.8;
+	margin-top: 1%;
+	margin-left: 3%;
+	height: inherit;
+}
+
+.img img{
+	width: 100%;
+	height: 100%;
+	border: 1px solid white;
+}
+
+.menu-modal{
+	margin-top: 2%;
+    position: absolute;
+    width: 20%;
+    background-color: black;
+    display: inline-block;
+}
+
+.menu-modal h4{
+    padding: 3%;
+    margin: 0;
+}
+
+.menu-modal a{
+	cursor: pointer;
+	position: static;
+	width: inherit;
+}
+
+.menu-modal h4:hover, .active-modal{
+	background-color: #006666;
+}
+
+.dados, .tur{
+	border-bottom: 2px solid #006666;
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .info{
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.8);
 	width: 90%;
 	z-index: 1024;
 	position: fixed;
@@ -66,13 +157,19 @@ section{
 	max-height: 70%;
 	overflow-y: auto;
 	color: white;
+	height: inherit;
 }
 
 #fecha-modal{
 	position: fixed;
-	top: 18%;
-	right: 7%;
-	font-size: 40px;
+	top: 2%;
+	right: 5%;
+	font-size: 22px;
+	width: auto;
+	height: 30px;
+	text-align: center;
+	border: 1px solid white;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cor{
@@ -358,6 +455,9 @@ nav li a:hover{
 	.titulo-img{
 		font-size: 18px;
 	}
+	#info h3{
+		width: 98%;
+	}
 }
 
 @media (min-width: 600px) and (max-width: 780px){
@@ -372,6 +472,9 @@ nav li a:hover{
 	}
 	.titulo-img{
 		font-size: 18px;
+	}
+	#info h3{
+		width: 98%;
 	}
 }
 
@@ -394,6 +497,9 @@ nav li a:hover{
 	.titulo{
 		padding-top: 10%;
 		padding-bottom: 10%;
+	}
+	#info h3{
+		width: 98%;
 	}
 }
 
@@ -451,13 +557,28 @@ nav li a:hover{
 	.info{
 		width: 90%;
 		left: 4%;
-		max-height: 96%;
-		top: 2%;
+		max-height: 92%;
+		top: 8%;
 	}
 	#fecha-modal{
-		top: 3%;
-		right: 6%;
-		font-size: 40px;
+		height: 25px;
+		width: auto;
+		font-size: 18px;
+		top: 1%;
+	}
+	.menu-modal{
+		display: none;
+	}
+	.modal h1{
+		font-size: 20px;
+	}.modal h2{
+		font-size: 18px;
+	}
+	#info h3{
+		width: 98%;
+	}
+	#info{
+		width: 96%;
 	}
 }
 
