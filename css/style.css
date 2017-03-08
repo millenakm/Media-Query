@@ -43,18 +43,6 @@ section{
 	background-position: center;
 }
 
-.modal-body{
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	z-index: 1023;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(255, 255, 255, 0.2);
-}
-
 mark{
 	background-color: transparent;
 	border-bottom: solid 2px #00b3b3;
@@ -87,7 +75,7 @@ mark{
 #info{
 	margin-left: 1%;
     padding: 1%;
-    width: 70%;
+    width: 96%;
     display: inline-block;
     margin-right: 2%;
 }
@@ -98,13 +86,20 @@ mark{
 	padding: 1%;
 }
 
-#info h2{
+#info h4{
+	margin: 0;
+	width: 98%;
+	padding: 1%;
+	background-color: #009999;
+	color: white;
 	text-align: center;
 	font-family: 'Playfair Display SC', serif;
+	opacity: 0.8;
+	border-bottom: 1px solid white;
 }
 
 #header .img{
-	width: 20%;
+	width: 22%;
 	float: left;
 	opacity: 0.8;
 	margin-top: 1%;
@@ -118,43 +113,30 @@ mark{
 	border: 1px solid white;
 }
 
-.menu-modal{
-	margin-top: 2%;
-    position: absolute;
-    width: 20%;
-    background-color: black;
-    display: inline-block;
-}
 
-.menu-modal h4{
-    padding: 3%;
-    margin: 0;
-}
-
-.menu-modal a{
+#info a{
 	cursor: pointer;
 	position: static;
 	width: inherit;
 }
 
-.menu-modal h4:hover, .active-modal{
+#info h4:hover, .active-modal{
 	background-color: #006666;
 }
 
 .dados, .tur{
 	border-bottom: 2px solid #006666;
 	background-color: rgba(255, 255, 255, 0.2);
+	display: none;
 }
 
 .info{
 	background-color: rgba(0, 0, 0, 0.8);
-	width: 90%;
+	width: 98%;
 	z-index: 1024;
 	position: fixed;
-	top: 15%;
-	left: 4%;
 	padding: 1%;
-	max-height: 70%;
+	max-height: 98%;
 	overflow-y: auto;
 	color: white;
 	height: inherit;
@@ -163,7 +145,7 @@ mark{
 #fecha-modal{
 	position: fixed;
 	top: 2%;
-	right: 5%;
+	left: 3%;
 	font-size: 22px;
 	width: auto;
 	height: 30px;
@@ -574,11 +556,22 @@ nav li a:hover{
 	}.modal h2{
 		font-size: 18px;
 	}
-	#info h3{
+	#info h3, #info{
 		width: 98%;
 	}
-	#info{
+	#info h3{
+		margin-top: 2%;
+		margin-bottom: 2%;
+		font-size: 18px;
+	}
+	#info h4, .dados, .tur{
 		width: 96%;
+	}
+	.dados, .tur{
+		width: 98%;
+	}
+	.info{
+		overflow-x: hidden;
 	}
 }
 

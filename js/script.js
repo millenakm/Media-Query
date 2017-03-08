@@ -5,7 +5,8 @@ var dados={
 	    		{"local": "Orla de Victoria e Alfred", "localização":"Cidade do Cabo"}
 	    	
 	    ]},
-	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg", "capital": "Berlim", "idioma": "Alemão", "localização": "Oeste da Europa", "bandeira": "bandeira-alemanha.gif", "turismo":[	    	
+	    { "classe": "a", "nome": "Alemanha", "classeimg": 'alemanha', "url": "alemanha.jpg", "capital": "Berlim", "idioma": "Alemão", "localização": "Oeste da Europa", "bandeira": "bandeira-alemanha.gif", "turismo":[	
+	    		{"local": "exemplo", "localização": "exemplo"}    	
 	    ]},
 	    { "classe": "a", "nome": "Argentina", "classeimg": 'argentina', "url": "argentina.jpg", "capital": "", "idioma": "", "localização": "", "bandeira": "bandeira-argentina.gif", "turismo":[	    	
 	    ]},
@@ -116,7 +117,7 @@ function modal(nome){
 			$(".tur").html("");
 			for (var z=0; z<paises[i].turismo.length; z++){
 				var num = z+1;
-				$(".tur").append('<h3>'+num+'. <mark>Local:</mark> '+paises[i].turismo[z].local+'</h3><h3><mark>Localização:</mark> '+paises[i].turismo[z].localização+'</h3>');
+				$("#info").append('<div class="tur"><h3>'+num+'. <mark>Local:</mark> '+paises[i].turismo[z].local+'</h3><h3><mark>Localização:</mark> '+paises[i].turismo[z].localização+'</h3></div>');
 			}
 		}	
 	}
@@ -213,10 +214,10 @@ function actions(){
 		$("body").css({'overflow-y':'auto'});
 	})
 	$("#btn-info").click(function(){
-		$(".dados, #titulo-dados").toggle('slow');
+		$(".dados").slideToggle('slow');
 	});
 	$("#btn-turismo").click(function(){
-		$(".tur, #titulo-turismo").toggle('slow');
+		$(".tur").slideToggle('slow');
 	});
 }
 
